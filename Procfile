@@ -1,3 +1,4 @@
 # Procfile
 
-web: python manage.py migrate && gunicorn weatherapp.wsgi --log-file -
+release: python manage.py migrate
+web: gunicorn weatherapp.wsgi --log-file -
