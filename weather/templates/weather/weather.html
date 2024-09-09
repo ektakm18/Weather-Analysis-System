@@ -24,6 +24,7 @@
     
         .container {
             max-width: 600px;
+            width: 100%; /* Ensure the container uses full width on small screens */
             background: white;
             padding: 20px;
             border-radius: 8px;
@@ -41,7 +42,7 @@
             font-size: 18px;
             color: #555;
             margin: 10px 0;
-            text-align: center;  /* Center-align all paragraphs */
+            text-align: center;
         }
     
         .alert {
@@ -63,7 +64,7 @@
         select {
             padding: 10px;
             font-size: 16px;
-            width: 220px;
+            width: 220px; /* Default width */
             border: 1px solid #ccc;
             border-radius: 4px;
             margin-bottom: 10px;
@@ -88,7 +89,7 @@
             margin-top: 20px;
             padding-top: 20px;
             border-top: 1px solid #ddd;
-            text-align: center;  /* Center-align trends section */
+            text-align: center;
         }
     
         .trends-section h2 {
@@ -102,8 +103,63 @@
             margin-top: 20px;
             text-align: center;
             width: 100%;
-            position: fixed;
+            position: relative;
             bottom: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%; /* Adjust width for smaller screens */
+                padding: 15px; /* Reduce padding */
+            }
+
+            h1 {
+                font-size: 22px; /* Smaller font size for heading */
+            }
+
+            p {
+                font-size: 16px; /* Smaller font size for paragraphs */
+            }
+
+            button {
+                padding: 8px 16px; /* Adjust button size */
+                font-size: 14px; /* Adjust button font size */
+            }
+
+            select {
+                width: 100%; /* Use full width for mobile devices */
+                max-width: 300px; /* Limit the dropdown to a reasonable width */
+                padding: 10px;
+            }
+
+            .trends-section p {
+                font-size: 14px; /* Smaller text for trends */
+            }
+
+            .footer {
+                font-size: 12px; /* Smaller footer text */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px; /* Even smaller font size for mobile */
+            }
+
+            p {
+                font-size: 14px; /* Adjust paragraph font size for mobile */
+            }
+
+            button {
+                font-size: 12px; /* Smaller button text */
+                padding: 8px 12px;
+            }
+
+            select {
+                font-size: 14px;
+                padding: 8px;
+            }
         }
     </style>    
 </head>
