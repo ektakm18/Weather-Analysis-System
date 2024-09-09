@@ -4,10 +4,11 @@ from django.utils import timezone
 from .models import WeatherData
 from django.db import models
 from django.db.models import Avg, Max, Min
+import os
 
 
 # OpenWeatherMap API key
-API_KEY = 'c14368f9f08f71fb15ea6b78751f282d'
+API_KEY = os.getenv('WEATHER_API_KEY')
 
 def fetch_weather_data(city):
     # Checking if there's weather data for the city within the last 5 minutes
