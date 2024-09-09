@@ -1,0 +1,37 @@
+# .gitignore file
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+
+# Environment Variables
+.env
+
+# Node Modules (if you use npm/yarn)
+node_modules/
+
+# macOS specific files
+.DS_Store
+
+# virtual environments
+venv/
+*.env
+
+# PyCharm/IDEA specific files
+.idea/
+
+# Docker specific files
+docker-compose.yml
+Dockerfile
+
+# Render specific files
+render.yaml
