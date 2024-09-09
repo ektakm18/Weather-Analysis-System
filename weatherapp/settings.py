@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-h4*qp87j8%uoambxcb@=hn0a2=w*di9+g#cju857x%8pno6waj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['your-app-name.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['weatherdashboard-v80a.onrender.com', 'localhost']
 
 
 # Application definition
