@@ -13,6 +13,6 @@ This repository contains a Django-based web application that fetches real-time w
 
 - **Backend**: Django 5.1.1
 - **Frontend**: HTML, CSS
-- **Database**: SQLite (in development), PostgreSQL (recommended for production)
+- **Database**: SQLite
 - **API**: OpenWeatherMap API
-- **Web Server**: Gunicorn (for production)
+- **Web Server**: Gunicorn
